@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>test</title>
+    <link href="/2021/11/11/test/"/>
+    <url>/2021/11/11/test/</url>
+    
+    <content type="html"><![CDATA[<h1 id="小声明"><a href="#小声明" class="headerlink" title="小声明"></a>小声明</h1><blockquote><p>我感觉整个博客还是挺简单的，多亏了暑假装了一个pycharm，现在确实很舒服了。<br>感谢crabtux陪我侃天侃地orz。<br>希望这个博客能一直用下去吧，蛤蛤蛤</p></blockquote><h1 id="建立博客的初衷"><a href="#建立博客的初衷" class="headerlink" title="建立博客的初衷"></a>建立博客的初衷</h1><blockquote><p>原本对于拯救者ubuntu20.04显示wifi找不到适配器的问题纠结了得有两个星期(<del>绝对不是我中途划水嗷</del>),想写一个博客<br>记录一下当时的解决办法，在创建了之后觉得对于编程有关的问题也可以在此进行汇总(<del>也可以装13</del>)，就这么误打误撞搞起来了</p></blockquote><h1 id="建立博客时遇到的问题"><a href="#建立博客时遇到的问题" class="headerlink" title="建立博客时遇到的问题"></a>建立博客时遇到的问题</h1><blockquote><p>说真的，很少，主要是两个问题：<br>1.校园网网速太慢，我在npm install的时候转了好久<br>2.git好像没安到位导致git clone failed，后来为了逃避这个问题就直接去GitHub下载fluid主题了，自我感觉还不错</p></blockquote><h1 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h1><blockquote><p><a href="https://blog.csdn.net/yaorongke/article/details/119089190">https://blog.csdn.net/yaorongke/article/details/119089190</a><br>完全傻瓜式教程，非常良心，可以借鉴。</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2021/11/11/hello-world/"/>
+    <url>/2021/11/11/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
