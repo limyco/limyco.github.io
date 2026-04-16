@@ -6,108 +6,125 @@
   <meta name="description" content="关于在联想拯救者上安装 Ubuntu 20.04 后无线网卡驱动缺失的解决过程。">
   <title>关于联想拯救者在ubuntu20.04未找到wifi适配器的问题 - aw0830</title>
   <link rel="icon" href="/img/favicon.png">
+  <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="stylesheet" href="/css/minimal.css">
 </head>
 <body>
 
+<div class="reading-progress-wrap"><div class="reading-progress" id="reading-progress"></div></div>
+
 <header class="site-header">
   <nav class="site-nav">
-    <a href="/" class="site-title">aw0830</a>
-    <ul class="nav-links">
-      <li><a href="/">首页</a></li>
-      <li><a href="/archives/">归档</a></li>
-      <li><a href="/categories/">分类</a></li>
-      <li><a href="/tags/">标签</a></li>
-      <li><a href="/about/">关于</a></li>
-    </ul>
+    <a href="/" class="site-title"><span>aw0830</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/archives/">归档</a></li>
+        <li><a href="/categories/">分类</a></li>
+        <li><a href="/tags/">标签</a></li>
+        <li><a href="/about/">关于</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="切换主题">☾</button>
+    </div>
   </nav>
 </header>
 
 <main>
-  <div class="site-wrapper">
+  <div class="post-layout">
+    <div class="post-main">
 
-    <div class="post-header">
-      <h1 class="post-page-title">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</h1>
-      <div class="post-meta">
-        <span>2021-11-15</span>
-      </div>
-    </div>
-
-    <div class="post-content">
-      <h1>序言</h1>
-      <p>关于这个问题是我一直想总结的东西，但是苦于没有时间，总结的事情一直被搁置了。在11.15号英语口语课摸鱼中，心血来潮，便有了这篇vlog。</p>
-
-      <h1>错误的尝试</h1>
-      <blockquote>
-        <p>sudo apt-get update<br>sudo apt-get install bcmwl-kernel-source</p>
-      </blockquote>
-      <p>这是我打了很多遍的代码，不幸的是并没有什么用，在当时我还没搞清楚wifi适配器为啥找不到的时候，只能重启，输入，也没有找到别的解决方法hhh</p>
-      <blockquote>
-        <p>sudo modprobe -r ideapad_laptop</p>
-      </blockquote>
-      <p>移除ideapad无线模块，对我的电脑来说也没有用（<del>难道是我的电脑没有用软碟通装Ubuntu的问题？</del>）</p>
-
-      <h1>对我电脑来说的正解</h1>
-      <p>在明白是我没有安装无线网卡的问题之后，我也算从csdn上淘到了金子。（安装rtw89）解决方法如下：</p>
-      <p>1. 进入bios，将security boot设置为disenable，因为涉及到修改内核配置必须关掉安全启动。<br>
-         2. 查询网卡状态（如果不一样需要重装）</p>
-      <blockquote>
-        <p>lshw -C network</p>
-      </blockquote>
-      <p>3. 下载驱动源码并安装</p>
-      <blockquote>
-        <p>uname -sr<br>
-           sudo apt-get update<br>
-           sudo apt-get install make gcc linux-headers-$(uname -r) build-essential git<br>
-           git clone https://github.com/lwfinger/rtw89.git</p>
-      </blockquote>
-      <p>第一行是查询Ubuntu内核（小于5.4请先升级内核）<br>
-         第二第三行是必要的工具<br>
-         最后安装驱动<br>
-         接着打开rtw89目录下的phy.c，注释掉 <code>bss_color = vif-&gt;bss_conf.he_bss_color.color;</code></p>
-      <p>再打开rtw89目录下的cam.c，注释掉<br>
-         <code>u8 bss_color = vif-&gt;bss_conf.he_bss_color.color;</code> 和<br>
-         <code>FWCMD_SET_ADDR_BSSID_BSS_COLOR(cmd, bss_color);</code></p>
-      <blockquote>
-        <p>cd rtw89<br>
-           make<br>
-           cd /lib/firmware<br>
-           mkdir rtw89<br>
-           cd rtw89<br>
-           sudo make install</p>
-      </blockquote>
-      <p>若显示 install rtw89 SUCCESS 表明成功安装驱动</p>
-      <p>4. 激活驱动</p>
-      <blockquote>
-        <p>cd ~/rtw89<br>sudo modprobe rtw89pci</p>
-      </blockquote>
-      <p>好了，恭喜我的电脑又出现了wifi图标！感谢观看。</p>
-    </div>
-
-    <div class="post-footer">
-      <div class="post-tags">
-        <span>标签：</span>
-        <a href="/tags/Ubuntu20-04/" class="tag-pill">Ubuntu20.04</a>
-      </div>
-      <p style="font-size:0.8125rem;color:var(--fg-subtle);">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0 协议</a>，转载请注明出处。</p>
-      <nav class="post-nav">
-        <div class="post-nav-item">
-          <div class="post-nav-label">上一篇</div>
-          <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/" class="post-nav-title">ict奇遇记</a>
+      <div class="post-header">
+        <h1 class="post-page-title">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</h1>
+        <div class="post-meta">
+          <span>2021-11-15</span>
+          <span class="read-time">⏱ 约 3 分钟</span>
+          <a href="/tags/Ubuntu20-04/" class="tag-pill">Ubuntu20.04</a>
         </div>
-        <div class="post-nav-item next">
-          <div class="post-nav-label">下一篇</div>
-          <a href="/2021/11/11/hello-world/" class="post-nav-title">Hello World</a>
+      </div>
+
+      <div class="post-content">
+        <h1 id="preface">序言</h1>
+        <p>关于这个问题是我一直想总结的东西，但是苦于没有时间，总结的事情一直被搁置了。在11.15号英语口语课摸鱼中，心血来潮，便有了这篇vlog。</p>
+
+        <h1 id="wrong-tries">错误的尝试</h1>
+        <pre><code>sudo apt-get update
+sudo apt-get install bcmwl-kernel-source</code></pre>
+        <p>这是我打了很多遍的代码，不幸的是并没有什么用，在当时我还没搞清楚wifi适配器为啥找不到的时候，只能重启，输入，也没有找到别的解决方法hhh</p>
+        <pre><code>sudo modprobe -r ideapad_laptop</code></pre>
+        <p>移除ideapad无线模块，对我的电脑来说也没有用（<del>难道是我的电脑没有用软碟通装Ubuntu的问题？</del>）</p>
+
+        <h1 id="solution">对我电脑来说的正解</h1>
+        <p>在明白是我没有安装无线网卡的问题之后，我也算从csdn上淘到了金子。（安装rtw89）解决方法如下：</p>
+        <p>1. 进入bios，将security boot设置为disenable，因为涉及到修改内核配置必须关掉安全启动。<br>2. 查询网卡状态（如果不一样需要重装）</p>
+        <pre><code>lshw -C network</code></pre>
+        <p>3. 下载驱动源码并安装</p>
+        <pre><code>uname -sr
+sudo apt-get update
+sudo apt-get install make gcc linux-headers-$(uname -r) build-essential git
+git clone https://github.com/lwfinger/rtw89.git</code></pre>
+        <p>第一行是查询Ubuntu内核（小于5.4请先升级内核），第二第三行是必要的工具，最后安装驱动。<br>
+           接着打开 <code>rtw89/phy.c</code>，注释掉：</p>
+        <pre><code>bss_color = vif->bss_conf.he_bss_color.color;</code></pre>
+        <p>再打开 <code>rtw89/cam.c</code>，注释掉：</p>
+        <pre><code>u8 bss_color = vif->bss_conf.he_bss_color.color;
+FWCMD_SET_ADDR_BSSID_BSS_COLOR(cmd, bss_color);</code></pre>
+        <pre><code>cd rtw89
+make
+cd /lib/firmware
+mkdir rtw89
+cd rtw89
+sudo make install</code></pre>
+        <p>若显示 <code>install rtw89 SUCCESS</code> 表明成功安装驱动。</p>
+        <p>4. 激活驱动</p>
+        <pre><code>cd ~/rtw89
+sudo modprobe rtw89pci</code></pre>
+        <p>好了，恭喜我的电脑又出现了wifi图标！感谢观看。</p>
+      </div>
+
+      <div class="post-footer">
+        <div class="post-tags">
+          <span>标签：</span>
+          <a href="/tags/Ubuntu20-04/" class="tag-pill">Ubuntu20.04</a>
         </div>
-      </nav>
+        <p style="font-size:0.8125rem;color:var(--fg-subtle);">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0 协议</a>，转载请注明出处。</p>
+        <nav class="post-nav">
+          <div class="post-nav-item">
+            <div class="post-nav-label">上一篇</div>
+            <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/" class="post-nav-title">ict奇遇记</a>
+          </div>
+          <div class="post-nav-item next">
+            <div class="post-nav-label">下一篇</div>
+            <a href="/2021/11/11/hello-world/" class="post-nav-title">Hello World</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="comments-section">
+        <div class="comments-title">评论</div>
+        <script src="https://utteranc.es/client.js"
+                repo="limyco/limyco.github.io"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+
     </div>
 
+    <aside class="toc-sidebar">
+      <div class="toc-title">目录</div>
+      <div id="toc"></div>
+    </aside>
   </div>
 </main>
+
+<button id="back-top" aria-label="返回顶部">↑</button>
 
 <footer class="site-footer">
   <span>© 2026 aw0830 &nbsp;·&nbsp; Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></span>
 </footer>
 
+<script src="/js/theme.js"></script>
 </body>
 </html>

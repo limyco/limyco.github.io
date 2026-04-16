@@ -5,44 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>分类：Java - aw0830</title>
   <link rel="icon" href="/img/favicon.png">
+  <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="stylesheet" href="/css/minimal.css">
 </head>
 <body>
-
+<div class="reading-progress-wrap"><div class="reading-progress" id="reading-progress"></div></div>
 <header class="site-header">
   <nav class="site-nav">
-    <a href="/" class="site-title">aw0830</a>
-    <ul class="nav-links">
-      <li><a href="/">首页</a></li>
-      <li><a href="/archives/">归档</a></li>
-      <li><a href="/categories/">分类</a></li>
-      <li><a href="/tags/">标签</a></li>
-      <li><a href="/about/">关于</a></li>
-    </ul>
+    <a href="/" class="site-title"><span>aw0830</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li><li><a href="/archives/">归档</a></li><li><a href="/categories/">分类</a></li><li><a href="/tags/">标签</a></li><li><a href="/about/">关于</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="切换主题">☾</button>
+    </div>
   </nav>
 </header>
-
 <main>
   <div class="site-wrapper">
     <section class="page-section">
       <h2 class="page-title">分类：Java</h2>
       <ul class="post-list">
         <li class="post-item">
-          <div class="post-item-title">
-            <a href="/2021/11/11/test/">test</a>
-          </div>
-          <div class="post-item-meta">
-            <span>2021-11-11</span>
-          </div>
+          <a href="/2021/11/11/test/" class="post-item-inner">
+            <div class="post-item-title">test</div>
+            <div class="post-item-meta"><span>2021-11-11</span></div>
+          </a>
         </li>
       </ul>
     </section>
   </div>
 </main>
-
-<footer class="site-footer">
-  <span>© 2026 aw0830 &nbsp;·&nbsp; Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></span>
-</footer>
-
+<button id="back-top" aria-label="返回顶部">↑</button>
+<footer class="site-footer"><span>© 2026 aw0830 &nbsp;·&nbsp; Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></span></footer>
+<script src="/js/theme.js"></script>
 </body>
 </html>

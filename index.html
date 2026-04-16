@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="linmuyang的个人博客">
-  <meta name="author" content="linmuyang">
   <title>aw0830</title>
   <link rel="icon" href="/img/favicon.png">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||( window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
   <link rel="stylesheet" href="/css/minimal.css">
 </head>
 <body>
 
+<div class="reading-progress-wrap"><div class="reading-progress" id="reading-progress"></div></div>
+
 <header class="site-header">
   <nav class="site-nav">
-    <a href="/" class="site-title">aw0830</a>
-    <ul class="nav-links">
-      <li><a href="/">首页</a></li>
-      <li><a href="/archives/">归档</a></li>
-      <li><a href="/categories/">分类</a></li>
-      <li><a href="/tags/">标签</a></li>
-      <li><a href="/about/">关于</a></li>
-    </ul>
+    <a href="/" class="site-title"><span>aw0830</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/archives/">归档</a></li>
+        <li><a href="/categories/">分类</a></li>
+        <li><a href="/tags/">标签</a></li>
+        <li><a href="/about/">关于</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="切换主题">☾</button>
+    </div>
   </nav>
 </header>
 
@@ -30,35 +37,35 @@
       <ul class="post-list">
 
         <li class="post-item">
-          <div class="post-item-title">
-            <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/">ict奇遇记</a>
-          </div>
-          <div class="post-item-meta">
-            <span>2026-03-30</span>
-            <a href="/tags/%E5%8E%9F%E5%88%9B/" class="tag-pill">原创</a>
-          </div>
-          <p class="post-item-excerpt">明天就是中科院计算所的复试了，写下此刻的心情，记录这段忐忑又期待的旅程。</p>
+          <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/" class="post-item-inner">
+            <div class="post-item-title">ict奇遇记</div>
+            <div class="post-item-meta">
+              <span>2026-03-30</span>
+              <span class="tag-pill">原创</span>
+            </div>
+            <p class="post-item-excerpt">明天就是中科院计算所的复试了，写下此刻的心情，记录这段忐忑又期待的旅程。</p>
+          </a>
         </li>
 
         <li class="post-item">
-          <div class="post-item-title">
-            <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</a>
-          </div>
-          <div class="post-item-meta">
-            <span>2021-11-15</span>
-            <a href="/tags/Ubuntu20-04/" class="tag-pill">Ubuntu20.04</a>
-          </div>
-          <p class="post-item-excerpt">关于在联想拯救者上安装 Ubuntu 20.04 后无线网卡驱动缺失的解决过程。</p>
+          <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-item-inner">
+            <div class="post-item-title">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</div>
+            <div class="post-item-meta">
+              <span>2021-11-15</span>
+              <span class="tag-pill">Ubuntu20.04</span>
+            </div>
+            <p class="post-item-excerpt">关于在联想拯救者上安装 Ubuntu 20.04 后无线网卡驱动缺失的解决过程。</p>
+          </a>
         </li>
 
         <li class="post-item">
-          <div class="post-item-title">
-            <a href="/2021/11/11/hello-world/">Hello World</a>
-          </div>
-          <div class="post-item-meta">
-            <span>2021-11-11</span>
-          </div>
-          <p class="post-item-excerpt">Welcome to Hexo! This is your very first post.</p>
+          <a href="/2021/11/11/hello-world/" class="post-item-inner">
+            <div class="post-item-title">Hello World</div>
+            <div class="post-item-meta">
+              <span>2021-11-11</span>
+            </div>
+            <p class="post-item-excerpt">Welcome to Hexo! This is your very first post.</p>
+          </a>
         </li>
 
       </ul>
@@ -66,9 +73,12 @@
   </div>
 </main>
 
+<button id="back-top" aria-label="返回顶部">↑</button>
+
 <footer class="site-footer">
   <span>© 2026 aw0830 &nbsp;·&nbsp; Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></span>
 </footer>
 
+<script src="/js/theme.js"></script>
 </body>
 </html>

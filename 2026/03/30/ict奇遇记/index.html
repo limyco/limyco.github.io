@@ -6,83 +6,110 @@
   <meta name="description" content="明天就是中科院计算所的复试了，写下此刻的心情，记录这段忐忑又期待的旅程。">
   <title>ict奇遇记 - aw0830</title>
   <link rel="icon" href="/img/favicon.png">
+  <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="stylesheet" href="/css/minimal.css">
 </head>
 <body>
 
+<div class="reading-progress-wrap"><div class="reading-progress" id="reading-progress"></div></div>
+
 <header class="site-header">
   <nav class="site-nav">
-    <a href="/" class="site-title">aw0830</a>
-    <ul class="nav-links">
-      <li><a href="/">首页</a></li>
-      <li><a href="/archives/">归档</a></li>
-      <li><a href="/categories/">分类</a></li>
-      <li><a href="/tags/">标签</a></li>
-      <li><a href="/about/">关于</a></li>
-    </ul>
+    <a href="/" class="site-title"><span>aw0830</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/archives/">归档</a></li>
+        <li><a href="/categories/">分类</a></li>
+        <li><a href="/tags/">标签</a></li>
+        <li><a href="/about/">关于</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="切换主题">☾</button>
+    </div>
   </nav>
 </header>
 
 <main>
-  <div class="site-wrapper">
+  <div class="post-layout">
+    <div class="post-main">
 
-    <div class="post-header">
-      <h1 class="post-page-title">ict奇遇记</h1>
-      <div class="post-meta">
-        <span>2026-03-30</span>
-        <span>约 800 字</span>
-      </div>
-    </div>
-
-    <div class="post-content">
-      <h1>前夜</h1>
-      <p>今晚睡不着。</p>
-      <p>窗外偶尔有车声驶过，屋里只剩下键盘敲击的声音和自己的心跳。明天，就是中国科学院计算技术研究所的复试了。</p>
-      <p>打开手机，看了一眼日历——2026年3月31日。这个日期在我脑海里盘旋了好几个月，从最初得知复试名单时的狂喜，到备考过程中的反复煎熬，再到此刻，它终于真实地站在了眼前。</p>
-
-      <h1>为什么是计算所</h1>
-      <p>第一次知道中科院计算所，是大二翻论文的时候。那篇关于体系结构的文章作者单位一栏写着"Institute of Computing Technology, Chinese Academy of Sciences"，简称 ICT。</p>
-      <p>那时只觉得这名字念起来很响亮。后来慢慢了解，龙芯、寒武纪，很多国产芯片背后的影子都有它。计算机体系结构、处理器设计、高性能计算……这些恰恰是我最感兴趣的方向。</p>
-      <p>于是它成了我报考时的第一志愿，也成了我这半年最沉重的念想。</p>
-
-      <h1>备考的那些日子</h1>
-      <p>初试成绩出来的那天，我在图书馆。看到分数的瞬间，手有点抖——过线了，但不算高。</p>
-      <p>从那天开始，进入了另一种节奏：每天刷专业课知识点、整理项目经历、背英文自我介绍、模拟面试……有几次练到半夜，说着说着脑子就断片，卡在某个词上出不来，对着墙愣了好几分钟。</p>
-      <p>也有低谷的时候。看到群里有人晒出发表的论文、竞赛的奖项，再对比自己略显平淡的简历，那种无力感是真实的。但又能怎样，只能继续准备。</p>
-
-      <h1>此刻的心情</h1>
-      <p>说不紧张是假的。</p>
-      <p>怕老师问到没准备的题，怕英文表达磕磕绊绊，怕自己在关键时刻脑子空白。但仔细想想，能走到复试这一步，本身已经是一件值得认真对待的事了。</p>
-      <p>我想起备考时看到的一句话：<strong>你能走到这里，不是偶然。</strong></p>
-      <p>不管明天结果如何，这段经历——那些反复推敲的夜晚、那些查资料查到眼睛发酸的下午、还有此刻这篇睡前的胡思乱想——都是真实发生过的。</p>
-
-      <h1>明天见，计算所</h1>
-      <p>关掉台灯，试着睡一会儿。</p>
-      <p>明天，好好发挥。</p>
-    </div>
-
-    <div class="post-footer">
-      <div class="post-tags">
-        <span>标签：</span>
-        <a href="/tags/%E5%8E%9F%E5%88%9B/" class="tag-pill">原创</a>
-      </div>
-      <p style="font-size:0.8125rem;color:var(--fg-subtle);">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0 协议</a>，转载请注明出处。</p>
-      <nav class="post-nav">
-        <div class="post-nav-item">
+      <div class="post-header">
+        <h1 class="post-page-title">ict奇遇记</h1>
+        <div class="post-meta">
+          <span>2026-03-30</span>
+          <span class="read-time">⏱ 约 4 分钟</span>
+          <a href="/tags/%E5%8E%9F%E5%88%9B/" class="tag-pill">原创</a>
         </div>
-        <div class="post-nav-item next">
-          <div class="post-nav-label">下一篇</div>
-          <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-nav-title">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</a>
+      </div>
+
+      <div class="post-content">
+        <h1 id="pre-night">前夜</h1>
+        <p>今晚睡不着。</p>
+        <p>窗外偶尔有车声驶过，屋里只剩下键盘敲击的声音和自己的心跳。明天，就是中国科学院计算技术研究所的复试了。</p>
+        <p>打开手机，看了一眼日历——2026年3月31日。这个日期在我脑海里盘旋了好几个月，从最初得知复试名单时的狂喜，到备考过程中的反复煎熬，再到此刻，它终于真实地站在了眼前。</p>
+
+        <h1 id="why-ict">为什么是计算所</h1>
+        <p>第一次知道中科院计算所，是大二翻论文的时候。那篇关于体系结构的文章作者单位一栏写着"Institute of Computing Technology, Chinese Academy of Sciences"，简称 ICT。</p>
+        <p>那时只觉得这名字念起来很响亮。后来慢慢了解，龙芯、寒武纪，很多国产芯片背后的影子都有它。计算机体系结构、处理器设计、高性能计算……这些恰恰是我最感兴趣的方向。</p>
+        <p>于是它成了我报考时的第一志愿，也成了我这半年最沉重的念想。</p>
+
+        <h1 id="prep">备考的那些日子</h1>
+        <p>初试成绩出来的那天，我在图书馆。看到分数的瞬间，手有点抖——过线了，但不算高。</p>
+        <p>从那天开始，进入了另一种节奏：每天刷专业课知识点、整理项目经历、背英文自我介绍、模拟面试……有几次练到半夜，说着说着脑子就断片，卡在某个词上出不来，对着墙愣了好几分钟。</p>
+        <p>也有低谷的时候。看到群里有人晒出发表的论文、竞赛的奖项，再对比自己略显平淡的简历，那种无力感是真实的。但又能怎样，只能继续准备。</p>
+
+        <h1 id="feeling">此刻的心情</h1>
+        <p>说不紧张是假的。</p>
+        <p>怕老师问到没准备的题，怕英文表达磕磕绊绊，怕自己在关键时刻脑子空白。但仔细想想，能走到复试这一步，本身已经是一件值得认真对待的事了。</p>
+        <p>我想起备考时看到的一句话：<strong>你能走到这里，不是偶然。</strong></p>
+        <p>不管明天结果如何，这段经历——那些反复推敲的夜晚、那些查资料查到眼睛发酸的下午、还有此刻这篇睡前的胡思乱想——都是真实发生过的。</p>
+
+        <h1 id="tomorrow">明天见，计算所</h1>
+        <p>关掉台灯，试着睡一会儿。</p>
+        <p>明天，好好发挥。</p>
+      </div>
+
+      <div class="post-footer">
+        <div class="post-tags">
+          <span>标签：</span>
+          <a href="/tags/%E5%8E%9F%E5%88%9B/" class="tag-pill">原创</a>
         </div>
-      </nav>
+        <p style="font-size:0.8125rem;color:var(--fg-subtle);">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-SA 4.0 协议</a>，转载请注明出处。</p>
+        <nav class="post-nav">
+          <div class="post-nav-item"></div>
+          <div class="post-nav-item next">
+            <div class="post-nav-label">下一篇</div>
+            <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-nav-title">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="comments-section">
+        <div class="comments-title">评论</div>
+        <script src="https://utteranc.es/client.js"
+                repo="limyco/limyco.github.io"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+
     </div>
 
+    <aside class="toc-sidebar">
+      <div class="toc-title">目录</div>
+      <div id="toc"></div>
+    </aside>
   </div>
 </main>
+
+<button id="back-top" aria-label="返回顶部">↑</button>
 
 <footer class="site-footer">
   <span>© 2026 aw0830 &nbsp;·&nbsp; Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></span>
 </footer>
 
+<script src="/js/theme.js"></script>
 </body>
 </html>
