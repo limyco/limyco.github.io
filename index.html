@@ -1,497 +1,74 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="linmuyang的个人博客">
-  <meta name="author" content="John Doe">
-  <meta name="keywords" content="">
-  <meta name="description" content="linmuyang的个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="aw0830">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="aw0830">
-<meta property="og:description" content="linmuyang的个人博客">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary_large_image">
-  
+  <meta name="author" content="linmuyang">
   <title>aw0830</title>
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="/css/minimal.css">
+</head>
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>aw0830</strong>
-    </a>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="/" class="site-title">aw0830</a>
+    <ul class="nav-links">
+      <li><a href="/">首页</a></li>
+      <li><a href="/archives/">归档</a></li>
+      <li><a href="/categories/">分类</a></li>
+      <li><a href="/tags/">标签</a></li>
+      <li><a href="/about/">关于</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
+<main>
+  <div class="site-wrapper">
+    <section class="page-section">
+      <ul class="post-list">
+
+        <li class="post-item">
+          <div class="post-item-title">
+            <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/">ict奇遇记</a>
+          </div>
+          <div class="post-item-meta">
+            <span>2026-03-30</span>
+            <a href="/tags/%E5%8E%9F%E5%88%9B/" class="tag-pill">原创</a>
+          </div>
+          <p class="post-item-excerpt">明天就是中科院计算所的复试了，写下此刻的心情，记录这段忐忑又期待的旅程。</p>
+        </li>
+
+        <li class="post-item">
+          <div class="post-item-title">
+            <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/">关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</a>
+          </div>
+          <div class="post-item-meta">
+            <span>2021-11-15</span>
+            <a href="/tags/Ubuntu20-04/" class="tag-pill">Ubuntu20.04</a>
+          </div>
+          <p class="post-item-excerpt">关于在联想拯救者上安装 Ubuntu 20.04 后无线网卡驱动缺失的解决过程。</p>
+        </li>
+
+        <li class="post-item">
+          <div class="post-item-title">
+            <a href="/2021/11/11/hello-world/">Hello World</a>
+          </div>
+          <div class="post-item-meta">
+            <span>2021-11-11</span>
+          </div>
+          <p class="post-item-excerpt">Welcome to Hexo! This is your very first post.</p>
+        </li>
+
       </ul>
-    </div>
+    </section>
   </div>
-</nav>
+</main>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="林沐阳 个人博客">
-              
-            </span>
-
-            
-          </div>
-
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-
-
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-
-        <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/" target="_self">
-          ict奇遇记
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/" target="_self">
-
-
-
-
-          今晚睡不着。明天就是中国科学院计算技术研究所的复试了。窗外偶尔有车声驶过，屋里只剩下键盘敲击的声音和自己的心跳。打开手机，看了一眼日历——2026年3月31日。这个日期在我脑海里盘旋了好几个月……
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-03-30 16:00" pubdate>
-              2026-03-30
-            </time>
-          </div>
-
-
-
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-
-              <a href="/tags/%E5%8E%9F%E5%88%9B/">原创</a>
-
-          </div>
-
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-
-
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-
-        <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
-          关于联想拯救者在ubuntu20.04未找到wifi适配器的问题
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/" target="_self">
-          
-          
-            
-          
-          序言关于这个问题是我一直想总结的东西，但是苦于没有时间，总结的事情一直被搁置了。在11.15号英语口语课摸鱼中，心血来潮，便有了这篇vlog。
-错误的尝试
-sudo apt-get updatesudo apt-get install bcmwl-kernel-source  
-
-这是我打了很多遍的代码，不幸的是并没有什么用，在当时我还没搞清楚wifi适配器为啥找不到的时候，只能重启，输入，也没有
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-15 10:49" pubdate>
-              2021-11-15
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Ubuntu20-04/">Ubuntu20.04</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/11/11/test/" target="_self">
-          test
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/11/11/test/" target="_self">
-          
-          
-            
-          
-          小声明
-我感觉整个博客还是挺简单的，多亏了暑假装了一个pycharm，现在确实很舒服了。感谢crabtux陪我侃天侃地orz。希望这个博客能一直用下去吧，蛤蛤蛤
-
-建立博客的初衷
-原本对于拯救者ubuntu20.04显示wifi找不到适配器的问题纠结了得有两个星期(绝对不是我中途划水嗷),想写一个博客记录一下当时的解决办法，在创建了之后觉得对于编程有关的问题也可以在此进行汇总(也可以装13)，就这
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-11 23:03" pubdate>
-              2021-11-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/Java/">Java</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E5%8E%9F%E5%88%9B/">原创</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/11/11/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2021/11/11/hello-world/" target="_self">
-          
-          
-            
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-11-11 22:03" pubdate>
-              2021-11-11
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-
-    
-  </main>
-
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-  </div>
-  
-
-  
-
-  
+<footer class="site-footer">
+  <span>© 2026 aw0830 &nbsp;·&nbsp; Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></span>
 </footer>
-
-
-  <!-- SCRIPTS -->
-  
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-<!-- Plugins -->
-
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
-
 
 </body>
 </html>
