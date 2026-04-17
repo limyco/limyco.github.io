@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/11/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">One Command Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2021/11/11/test/</url>
+    <content><![CDATA[<h1 id="小声明"><a href="#小声明" class="headerlink" title="小声明"></a>小声明</h1><blockquote>
+<p>我感觉整个博客还是挺简单的，多亏了暑假装了一个pycharm，现在确实很舒服了。<br>感谢crabtux陪我侃天侃地orz。<br>希望这个博客能一直用下去吧，蛤蛤蛤</p>
+</blockquote>
+<h1 id="建立博客的初衷"><a href="#建立博客的初衷" class="headerlink" title="建立博客的初衷"></a>建立博客的初衷</h1><blockquote>
+<p>原本对于拯救者ubuntu20.04显示wifi找不到适配器的问题纠结了得有两个星期（<del>绝对不是我中途划水嗷</del>），想写一个博客记录一下当时的解决办法，在创建了之后觉得对于编程有关的问题也可以在此进行汇总（<del>也可以装13</del>），就这么误打误撞搞起来了</p>
+</blockquote>
+<h1 id="建立博客时遇到的问题"><a href="#建立博客时遇到的问题" class="headerlink" title="建立博客时遇到的问题"></a>建立博客时遇到的问题</h1><blockquote>
+<p>说真的，很少，主要是两个问题：</p>
+<ol>
+<li>校园网网速太慢，我在npm install的时候转了好久</li>
+<li>git好像没安到位导致git clone failed，后来为了逃避这个问题就直接去GitHub下载fluid主题了，自我感觉还不错</li>
+</ol>
+</blockquote>
+<h1 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h1><blockquote>
+<p><a href="https://blog.csdn.net/yaorongke/article/details/119089190">https://blog.csdn.net/yaorongke/article/details/119089190</a><br>完全傻瓜式教程，非常良心，可以借鉴。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于联想拯救者在ubuntu20.04未找到wifi适配器的问题</title>
+    <url>/2021/11/15/%E5%85%B3%E4%BA%8E%E8%81%94%E6%83%B3%E6%8B%AF%E6%95%91%E8%80%85%E5%9C%A8ubuntu20-04%E6%9C%AA%E6%89%BE%E5%88%B0wifi%E9%80%82%E9%85%8D%E5%99%A8%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>关于这个问题是我一直想总结的东西，但是苦于没有时间，总结的事情一直被搁置了。在11.15号英语口语课摸鱼中，心血来潮，便有了这篇vlog。</p>
+<h1 id="错误的尝试"><a href="#错误的尝试" class="headerlink" title="错误的尝试"></a>错误的尝试</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get update</span><br><span class="line"><span class="built_in">sudo</span> apt-get install bcmwl-kernel-source</span><br></pre></td></tr></table></figure>
+
+<p>这是我打了很多遍的代码，不幸的是并没有什么用，在当时我还没搞清楚wifi适配器为啥找不到的时候，只能重启，输入，也没有找到别的解决方法hhh</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> modprobe -r ideapad_laptop</span><br></pre></td></tr></table></figure>
+
+<p>移除ideapad无线模块，对我的电脑来说也没有用（<del>难道是我的电脑没有用软碟通装Ubuntu的问题？</del>）</p>
+<h1 id="对我电脑来说的正解"><a href="#对我电脑来说的正解" class="headerlink" title="对我电脑来说的正解"></a>对我电脑来说的正解</h1><p>在明白是我没有安装无线网卡的问题之后，我也算从csdn上淘到了金子。（安装rtw89）解决方法如下：</p>
+<ol>
+<li>进入bios，将security boot设置为disenable，因为涉及到修改内核配置必须关掉安全启动。</li>
+<li>查询网卡状态（如果不一样需要重装）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lshw -C network</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>下载驱动源码并安装</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">uname</span> -sr</span><br><span class="line"><span class="built_in">sudo</span> apt-get update</span><br><span class="line"><span class="built_in">sudo</span> apt-get install make gcc linux-headers-$(<span class="built_in">uname</span> -r) build-essential git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/lwfinger/rtw89.git</span><br></pre></td></tr></table></figure>
+
+<p>第一行是查询Ubuntu内核（小于5.4请先升级内核），第二第三行是必要的工具，最后安装驱动。</p>
+<p>接着打开 <code>rtw89/phy.c</code>，注释掉：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">bss_color = vif-&gt;bss_conf.he_bss_color.color;</span><br></pre></td></tr></table></figure>
+
+<p>再打开 <code>rtw89/cam.c</code>，注释掉：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">u8 bss_color = vif-&gt;bss_conf.he_bss_color.color;</span><br><span class="line">FWCMD_SET_ADDR_BSSID_BSS_COLOR(cmd, bss_color);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> rtw89</span><br><span class="line">make</span><br><span class="line"><span class="built_in">cd</span> /lib/firmware</span><br><span class="line"><span class="built_in">mkdir</span> rtw89</span><br><span class="line"><span class="built_in">cd</span> rtw89</span><br><span class="line"><span class="built_in">sudo</span> make install</span><br></pre></td></tr></table></figure>
+
+<p>若显示 <code>install rtw89 SUCCESS</code> 表明成功安装驱动。</p>
+<ol start="4">
+<li>激活驱动</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/rtw89</span><br><span class="line"><span class="built_in">sudo</span> modprobe rtw89pci</span><br></pre></td></tr></table></figure>
+
+<p>好了，恭喜我的电脑又出现了wifi图标！感谢观看。</p>
+]]></content>
+      <tags>
+        <tag>Ubuntu20.04</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ict奇遇记</title>
+    <url>/2026/03/30/ict%E5%A5%87%E9%81%87%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="前夜"><a href="#前夜" class="headerlink" title="前夜"></a>前夜</h1><p>今晚睡不着。</p>
+<p>窗外偶尔有车声驶过，屋里只剩下键盘敲击的声音和自己的心跳。明天，就是中国科学院计算技术研究所的复试了。</p>
+<p>打开手机，看了一眼日历——2026年3月31日。这个日期在我脑海里盘旋了好几个月，从最初得知复试名单时的狂喜，到备考过程中的反复煎熬，再到此刻，它终于真实地站在了眼前。</p>
+<h1 id="为什么是计算所"><a href="#为什么是计算所" class="headerlink" title="为什么是计算所"></a>为什么是计算所</h1><p>第一次知道中科院计算所，是大二翻论文的时候。那篇关于体系结构的文章作者单位一栏写着”Institute of Computing Technology, Chinese Academy of Sciences”，简称 ICT。</p>
+<p>那时只觉得这名字念起来很响亮。后来慢慢了解，龙芯、寒武纪，很多国产芯片背后的影子都有它。计算机体系结构、处理器设计、高性能计算……这些恰恰是我最感兴趣的方向。</p>
+<p>于是它成了我报考时的第一志愿，也成了我这半年最沉重的念想。</p>
+<h1 id="备考的那些日子"><a href="#备考的那些日子" class="headerlink" title="备考的那些日子"></a>备考的那些日子</h1><p>初试成绩出来的那天，我在图书馆。看到分数的瞬间，手有点抖——过线了，但不算高。</p>
+<p>从那天开始，进入了另一种节奏：每天刷专业课知识点、整理项目经历、背英文自我介绍、模拟面试……有几次练到半夜，说着说着脑子就断片，卡在某个词上出不来，对着墙愣了好几分钟。</p>
+<p>也有低谷的时候。看到群里有人晒出发表的论文、竞赛的奖项，再对比自己略显平淡的简历，那种无力感是真实的。但又能怎样，只能继续准备。</p>
+<h1 id="此刻的心情"><a href="#此刻的心情" class="headerlink" title="此刻的心情"></a>此刻的心情</h1><p>说不紧张是假的。</p>
+<p>怕老师问到没准备的题，怕英文表达磕磕绊绊，怕自己在关键时刻脑子空白。但仔细想想，能走到复试这一步，本身已经是一件值得认真对待的事了。</p>
+<p>我想起备考时看到的一句话：<strong>你能走到这里，不是偶然。</strong></p>
+<p>不管明天结果如何，这段经历——那些反复推敲的夜晚、那些查资料查到眼睛发酸的下午、还有此刻这篇睡前的胡思乱想——都是真实发生过的。</p>
+<h1 id="明天见，计算所"><a href="#明天见，计算所" class="headerlink" title="明天见，计算所"></a>明天见，计算所</h1><p>关掉台灯，试着睡一会儿。</p>
+<p>明天，好好发挥。</p>
+]]></content>
+      <tags>
+        <tag>原创</tag>
+      </tags>
+  </entry>
+</search>
